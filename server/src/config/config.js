@@ -1,7 +1,7 @@
 module.exports = {
     port: 8082,
     db: {
-        database: process.nextTick.DB_NAME || 'tabtracker',
+        database: process.env.DB_NAME || 'tabtracker',
         user: process.env.DB_USER || 'tabtracker',
         password: process.env.DB_PASS || 'tabtracker',
         options: {
